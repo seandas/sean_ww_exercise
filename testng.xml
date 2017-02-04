@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test name="Test" preserve-order="true">
+        <classes>
+            <class name="TEST01_ReverseEverything"/>
+            <class name="TEST02_Question2a_Food_Items_Display_Third_N_Fifth"/>
+            <class name="TEST03_Question2b_Iterate_Through_Food_Items_List"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
