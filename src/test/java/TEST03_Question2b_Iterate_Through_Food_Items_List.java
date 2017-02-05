@@ -19,9 +19,9 @@ public class TEST03_Question2b_Iterate_Through_Food_Items_List extends AbstractS
     public void iterateThroughAllEntries() {
         List<WebElement> foodNames = wDriver.findElements(By.cssSelector(".title.ng-binding"));
         System.out.println("foodNames.size: " + foodNames.size());
-        /* for (WebElement ele : foodNames) {
+        for (WebElement ele : foodNames) {
             System.out.println("Food Name: " + ele.getText());
-        }*/
+        }
         Reporter.log("======== FOOD NAME & SERVINGS ========");
         Hashtable<String, String> foodMap = getFoodServingMap();
         Reporter.log("Food Name\tServing", true);
