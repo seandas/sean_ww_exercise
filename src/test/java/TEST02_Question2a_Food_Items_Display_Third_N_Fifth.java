@@ -8,8 +8,7 @@ import java.util.List;
 
 /**
  * Created by SDAS on 2/4/2017.
- */
-/*
+
 a) Display the third and fifth item from the above list. Your output should be:
 Applesauce, unsweetened
 Juice, Cranberry-apple drink
@@ -24,11 +23,6 @@ public class TEST02_Question2a_Food_Items_Display_Third_N_Fifth extends Abstract
 
         Assert.assertEquals(itemList.get(2).getText(),"Applesauce, unsweetened", "Third Item" );
         Assert.assertEquals(itemList.get(4).getText(),"Juice, Cranberry-apple drink", "Fifth Item" );
-
-
-        /*        for (int i = 0; i < itemList.size(); i++) {
-            Reporter.log("Item Value: " + waitForElement(wDriver, itemList.get(i)).getText(), true);
-        }*/
 
     }
 }
