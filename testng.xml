@@ -3,7 +3,7 @@
 <suite name="Suite">
     <test name="Test" preserve-order="true">
         <classes>
-            <class name="TEST01_ReverseEverything"/>
+            <class name="TEST01_Reverse_Any_String"/>
             <class name="TEST02_Question2a_Food_Items_Display_Third_N_Fifth"/>
             <class name="TEST03_Question2b_Iterate_Through_Food_Items_List"/>
         </classes>

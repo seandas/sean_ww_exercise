@@ -36,6 +36,7 @@ public class AbstractStartWebDriver extends ReusableMethods {
     public static void afterTest(ITestResult result){
         if(result.getStatus() == ITestResult.SUCCESS){
             Reporter.log(testName +" : PASSED", true);
+            Reporter.log("+++++++++++++++++++++++++++++++++++++", true);
         }else{
             Assert.fail();
             Reporter.log(testName +" : FAILED!!!", true);
