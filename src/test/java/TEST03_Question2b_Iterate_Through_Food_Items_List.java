@@ -3,7 +3,9 @@ import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 /**
@@ -23,7 +25,7 @@ public class TEST03_Question2b_Iterate_Through_Food_Items_List extends AbstractS
             System.out.println("Food Name: " + ele.getText());
         }*/
         Reporter.log("======== FOOD NAME & SERVINGS ========");
-        Hashtable<String, String> foodMap = getFoodServingMap();
+        LinkedHashMap<String, String> foodMap = getFoodServingMap();
         Reporter.log("Food Name\tServing", true);
         for (String key : foodMap.keySet()) {
             Reporter.log(key + "\t" + foodMap.get(key), true);
@@ -31,8 +33,8 @@ public class TEST03_Question2b_Iterate_Through_Food_Items_List extends AbstractS
     }
 
     // Method
-    private Hashtable<String, String> getFoodServingMap() {
-        Hashtable<String, String> foodMap = new Hashtable<String, String>();
+    private LinkedHashMap<String, String> getFoodServingMap() {
+        LinkedHashMap<String, String> foodMap = new LinkedHashMap<String, String>();
         List<WebElement> foodNames = wDriver.findElements(By.cssSelector(".title.ng-binding"));
         List<WebElement> foodServings = wDriver.findElements(By.cssSelector(".description.ng-binding"));
         if (foodNames.size() == foodServings.size()) {
