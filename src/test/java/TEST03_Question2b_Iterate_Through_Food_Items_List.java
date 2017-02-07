@@ -30,7 +30,7 @@ public class TEST03_Question2b_Iterate_Through_Food_Items_List extends AbstractS
         }
     }
 
-    // Method
+    
     private LinkedHashMap<String, String> getFoodServingMap() {
         LinkedHashMap<String, String> foodMap = new LinkedHashMap<String, String>();
         List<WebElement> foodNames = wDriver.findElements(By.cssSelector(".title.ng-binding"));
